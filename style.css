@@ -1,0 +1,168 @@
+.container{
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-family: Arial;
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #fff;
+}
+
+h1 {
+    text-align: left;
+    font-size: 35px;
+}
+
+label {
+    background-color: #728a06;
+    font-size: 12px;
+    padding: 0.25em 0.2em;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#empty {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.form-pos {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn{
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 0.6em 1.2em;
+    margin: 0.3em 0.3em;
+    font-size: 15px;    
+}
+
+.add{
+    background-color: #2185d0;
+}
+
+.add:hover {
+    background-color: #054271;
+}
+
+.delete {
+    background-color: #ec0808;
+}
+
+.delete:hover {
+    background-color: #a80606;
+}
+
+.close {
+    background-color: #ec0808;
+}
+
+.close:hover {
+    background-color: #a80606;
+}
+
+.uncomplete {
+    background-color: #848789;
+}
+
+.uncomplete:hover {
+    background-color: #5a5c5e;
+}
+
+.complete {
+    background-color: #27b806;
+}
+
+.complete:hover {
+    background-color: #1c8c03;
+}
+
+.input-text {
+    font-size: 18px;
+    width: 50%;
+    border-radius: 5px;
+    padding: 0.5em 1.1em 0.5em 35px;
+    margin: 0.5em 0;
+    border-style: solid;
+    background-image: url(pen-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    background-position: 3px;
+}
+
+.input-text:focus {
+    background-color: rgba(5, 42, 71, 0.5);
+}
+
+.block {
+    margin: 0.5em 0;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: 2px solid rgba(5,42,71,0.5);
+    cursor: move;
+    transition: all 200ms;
+}
+
+.item-block {
+    display: flex;
+}
+
+.label-item {
+    background-color: #728a06;
+    font-size: 15px;
+    padding: 0.25em 0.2em;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.text-item {
+    background-color: #6f7377;
+    font-size: 15px;
+    padding: 0.25em 5em;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.time {
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#add-task-container {
+    color: black;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(33, 31, 31, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+
+#add-task-container.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#form-container {
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: solid;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}

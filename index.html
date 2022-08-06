@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class = "container">
+        <div id="header"><h1>To Do App</h1></div>
+        <div id = "nav">
+            <button class="btn add" id="add-task-button">Add new task</button>
+            <button class = "btn delete" id="delete-all">Delete All</button>
+        </div>
+
+        <div id = "todoList" >
+
+        </div>
+        
+    </div>
+    <div id="add-task-container">
+        <div id="form-container">
+            <form class = "form-pos">
+                <div>
+                    <label>Your Todo Task</label>
+                    <input class="input-text" type="text" name="title" placeholder="Enter Todo" required>
+                </div>
+                <div>
+                    <label for="start-time">Start date:</label>
+                    <input type="date" class="time" id="start-time" required>
+                </div>
+                <div>
+                    <label for="end-time">End date:</label>
+                    <input type="date" class="time" id="end-time" required>
+                </div>
+                <div>
+                    <button type="submit" class = "btn add">Add</button>
+                    <button type="button" class="btn close">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
